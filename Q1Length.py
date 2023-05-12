@@ -5,16 +5,15 @@
 while True:
         i = (input("Type in word here: "))
         print("\nThe number of charcters in your word is ",(len(i)))
-        q = input("\nWould you like another question or Quit? y/n: ")
+        q = input("\nWould you like another question or Quit? y/n: ").lower()
 
-        s = str.upper(q)
-        if s == "YES" or s == "Y":
-            s = s
-        elif s == "NO" or s == "N":
-            print("\nOk, Thank you for using Q1Length!\n")
+        if q == "yes" or q == "y":
+            q = q
+        elif q == "no" or q == "n":
+            print("\nBye bye\n")
             break
             
-        while s != "YES" and s != "Y" and s == "NO" and s == "N":
-            print("\nPlease answer with yes or no\n")
-            q = input("\nWould you like another question or Quit? y/n: ")
+        while q != "yes" or q != "y" or q == "no" or q == "n":
+            print("\nPlease answer with yes or no")
+            q = input("\nWould you like another question or Quit? y/n: ").lower()
             
