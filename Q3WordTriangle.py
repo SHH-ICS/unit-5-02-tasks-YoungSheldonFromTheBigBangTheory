@@ -5,3 +5,12 @@
 # PYTH
 # PYTHO
 # PYTHON
+
+import time
+
+s = input("Enter a word: ")
+
+for char in range(len(s)):
+    for col in range(char+1):
+        print(s[col],end=' ')
+    print()
