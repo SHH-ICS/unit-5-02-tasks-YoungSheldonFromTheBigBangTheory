@@ -6,8 +6,6 @@
 # PYTHO
 # PYTHON
 
-import time
-
 s = input("Enter a word: ")
 
 for char in range(len(s)):
